@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+@font-face {
+  font-family: Dobidoo;
+  src: url(utils/Dobidoo.otf);
+}
+
+body {
+  margin-top: 10vh;
+  background: url(utils/pic.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 90vh;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12vh;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  font-family: Dobidoo;
+  font-weight: 100;
+  font-size: 80px;
+  background: transparent;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: max-content;
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border: 12px solid rgb(92, 92, 92);
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.circle:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.seconds-hand {
+  height: 90px;
+  width: 0.5px;
+  top: 44px;
+  left: 125px;
+}
+
+.minutes-hand {
+  height: 80px;
+  width: 2px;
+  top: 54px;
+  left: 124px;
+}
+
+.hours-hand {
+  height: 50px;
+  width: 4px;
+  top: 85px;
+  left: 123px;
+}
+
+.center-dot {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.seconds-hand,
+.hours-hand,
+.minutes-hand {
+  position: absolute;
+  background-color: black;
+  border-radius: 30px;
+  transform-origin: bottom;
+  right: 0;
+  bottom: 0;
+}
+
+.clock-1-number,
+.clock-2-number,
+.clock-3-number,
+.clock-4-number,
+.clock-5-number,
+.clock-6-number,
+.clock-7-number,
+.clock-8-number,
+.clock-9-number,
+.clock-10-number,
+.clock-11-number,
+.clock-12-number {
+  right: 0;
+  bottom: 0;
+  font-size: 24px;
+  position: absolute;
+}
+
+.clock-12-number {
+  top: 2px;
+  left: 110px;
+}
+
+.clock-11-number {
+  top: 24px;
+  left: 52px;
+}
+
+.clock-10-number {
+  top: 69px;
+  left: 16px;
+}
+
+.clock-9-number {
+  top: 119px;
+  left: 8px;
+}
+
+.clock-8-number {
+  top: 170px;
+  left: 22px;
+}
+
+.clock-7-number {
+  top: 208px;
+  left: 64px;
+}
+
+.clock-6-number {
+  top: 220px;
+  left: 118px;
+}
+
+.clock-5-number {
+  top: 208px;
+  left: 170px;
+}
+
+.clock-4-number {
+  top: 170px;
+  left: 212px;
+}
+
+.clock-3-number {
+  top: 119px;
+  left: 230px;
+}
+
+.clock-2-number {
+  top: 69px;
+  left: 216px;
+}
+
+.clock-1-number {
+  top: 24px;
+  left: 180px;
+}
