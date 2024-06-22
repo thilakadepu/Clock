@@ -34,7 +34,7 @@ function calculateHourDegree (hour, minute) {
 }
 
 function calculateMinuteDegree (minutes) {
-  minutesDegrees = minutes * 5;
+  minutesDegrees = minutes * 6;
 }
 
 function calculateSecondDegree (seconds) {
