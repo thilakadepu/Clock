@@ -38,6 +38,6 @@ function calculateMinuteDegree (minutes) {
 }
 
 function calculateSecondDegree (seconds) {
-  secondsDegrees = seconds * 5;
+  secondsDegrees = seconds * 6;
 }
 
