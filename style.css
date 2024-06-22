@@ -73,7 +73,6 @@ body {
   width: 0.5px;
   top: 45px;
   left: 125px;
-  transform: rotate(260deg);
 }
 
 .minutes-hand {
@@ -81,7 +80,6 @@ body {
   width: 2px;
   top: 55px;
   left: 124px;
-  transform: rotate(160deg);
 }
 
 .hours-hand {
@@ -89,7 +87,6 @@ body {
   width: 4px;
   top: 85px;
   left: 123px;
-  transform: rotate(60deg);
 }
 
 .center-dot {

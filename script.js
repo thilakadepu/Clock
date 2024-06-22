@@ -26,7 +26,7 @@ setInterval(() => {
   hoursElement.style.transform = `rotate(${hoursDegrees}deg)`;
   secondsDegrees += 6;
   minutesDegrees += 0.1;
-  hoursDegrees += 0.00167;
+  // hoursDegrees += 0.00167;
 }, 1000);
 
 function calculateHourDegree (hour, minute) {
