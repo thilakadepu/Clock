@@ -7,10 +7,10 @@ const hoursElement = document.querySelector('.hours-hand-js');
 let hoursDegrees = minutesDegrees = secondsDegrees = 0;
 
 const hour = currentTime.getHours();
-const minute = currentTime.getMinutes();;
+const minute = currentTime.getMinutes();
 const second = currentTime.getSeconds();
 
-calculateHourDegree(hour);
+calculateHourDegree(hour, minute);
 calculateMinuteDegree(minute);
 calculateSecondDegree(second);
 
@@ -29,8 +29,8 @@ setInterval(() => {
   hoursDegrees += 0.00167;
 }, 1000);
 
-function calculateHourDegree (hour) {
-  hoursDegrees = hour * 30;
+function calculateHourDegree (hour, minute) {
+  hoursDegrees = hour * 30 + (minute * 0.5);
 }
 
 function calculateMinuteDegree (minutes) {
