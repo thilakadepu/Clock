@@ -15,8 +15,8 @@ calculateMinuteDegree(minute);
 calculateSecondDegree(second);
 
 setInterval(() => {
-  if (hoursDegrees === 360)
-    hoursDegrees = 0;
+  if (hoursDegrees >= 360)
+    hoursDegrees -= 360;
   if (minutesDegrees === 360)
     minutesDegrees = 0;
   if (secondsDegrees === 360)
@@ -26,7 +26,7 @@ setInterval(() => {
   hoursElement.style.transform = `rotate(${hoursDegrees}deg)`;
   secondsDegrees += 6;
   minutesDegrees += 0.1;
-  // hoursDegrees += 0.00167;
+  hoursDegrees += 0.01;
 }, 1000);
 
 function calculateHourDegree (hour, minute) {
