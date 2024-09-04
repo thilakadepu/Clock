@@ -1,2 +1,3 @@
 # Clock
- Creating an analog clock
+Click this link to display the clock : https://thilakadepu.github.io/Clock/
+
